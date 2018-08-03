@@ -1,0 +1,41 @@
+body { /*Default settings for webpage*/
+  background-color: black;
+  color: Seashell;
+  font-family: Helvetica;
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.header { /*Header of webpage*/
+  border-bottom: 1px solid Seashell;
+  display: flex;
+  height: 69px;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100%;
+}
+
+.logo-container { /*Flexbox containing logo image*/
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.page-nav { /*Group of links in header (not real links)*/
+  align-items: center;
+  display: inline-flex;
+  flex: 2 750px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 500px;
+}
+
+.nav-link { /*Links in header*/
+  border-bottom: 1px solid white;
+  margin: 20px;
+}
+
+#logo { /*Logo image*/
+  height: 50px;
+  margin: 10px;
+}
