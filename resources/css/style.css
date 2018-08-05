@@ -1,9 +1,9 @@
-* {
+* { /*Default settings for webpage*/
   margin: 0;
   padding: 0;
 }
 
-body { /*Default settings for webpage*/
+body { /*Default settings for visible content*/
   background-color: black;
   color: Seashell;
   font-family: Helvetica;
@@ -12,9 +12,9 @@ body { /*Default settings for webpage*/
   text-align: center;
 }
 
-img {
-  height: 200px;
-  width: 300px;
+.copyright { /*Copyright in footer*/
+  text-align: left;
+  margin: 20px;
 }
 
 .header { /*Header of webpage*/
@@ -28,26 +28,42 @@ img {
   z-index: 2;
 }
 
+.info { /*Information in footer (other than copyright)*/
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
 .location { /*Each location in Locations section of page*/
   background-color: black;
+  display: inline-flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
   margin: 10px;
+  padding: 0 40px;
+  width: 200px;
 }
 
 .locations {  /*Locations section of page*/
-  align-content: space-around;
+  /*align-content: space-around;*/
   background-image: url(../images/locations.jpg);
   display: flex;
   flex-direction: column;
-  height: 800px;
-  justify-content: center;
-  overflow: hidden;
-  width: 1000px;
+  height: 500px;
+  justify-content: flex-end;
+  padding-top: 45px;
+  width: 1200px;
 }
 
-.locations-container {
+.locations-container { /*Contains location items in Locations section*/
   display: flex;
   height: 450px;
   justify-content: center;
+  margin-top: 8px;
 }
 
 .logo-container { /*Flexbox containing logo image*/
@@ -56,25 +72,25 @@ img {
   justify-content: center;
 }
 
-.main {
+.main { /*Main section of webpage*/
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 2400px;
+  height: 2100px;
   justify-content: space-around;
   position: relative;
-  top: 69px;
+  top: 38px;
 }
 
 .month-items { /*items in tea of the month section*/
   align-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  height: 600px;
+  height: 525px;
   justify-content: space-around;
 }
 
-.mission {
+.mission { /*Mission statement section of webpage*/
   align-items: center;
   background-image: url("../images/background.jpg");
   display: flex;
@@ -84,7 +100,7 @@ img {
   width: 1200px;
 }
 
-.mission-item {
+.mission-item {  /*Items within the mission statement section*/
   background-color: black;
   padding: 10px;
   width: 100%;
@@ -107,9 +123,15 @@ img {
 .tea-month { /*Tea of the month section*/
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 660px;
   justify-content: space-around;
   width: 1000px;
+}
+
+.tea-month img { /*Images in Tea of the Month section*/
+  height: 200px;
+  margin-bottom: 10px;
+  width: 300px;
 }
 
 #logo { /*Logo image*/
