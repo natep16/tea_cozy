@@ -1,24 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body { /*Default settings for webpage*/
   background-color: black;
   color: Seashell;
   font-family: Helvetica;
   font-size: 22px;
   opacity: 0.9;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: 300px;
 }
 
 .header { /*Header of webpage*/
+  background-color: black;
   border-bottom: 1px solid Seashell;
   display: flex;
   height: 69px;
   justify-content: flex-start;
   position: fixed;
   width: 100%;
+  z-index: 2;
+}
+
+.location { /*Each location in Locations section of page*/
+  background-color: black;
+  margin: 10px;
+}
+
+.locations {  /*Locations section of page*/
+  align-content: space-around;
+  background-image: url(../images/locations.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: center;
+  overflow: hidden;
+  width: 1000px;
+}
+
+.locations-container {
+  display: flex;
+  height: 450px;
+  justify-content: center;
 }
 
 .logo-container { /*Flexbox containing logo image*/
   align-items: center;
   display: inline-flex;
   justify-content: center;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 2400px;
+  justify-content: space-around;
+  position: relative;
+  top: 69px;
+}
+
+.month-items { /*items in tea of the month section*/
+  align-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: space-around;
+}
+
+.mission {
+  align-items: center;
+  background-image: url("../images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: center;
+  width: 1200px;
+}
+
+.mission-item {
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-link { /*Links in header*/
+  border-bottom: 1px solid white;
+  margin: 20px;
 }
 
 .page-nav { /*Group of links in header (not real links)*/
@@ -30,9 +104,12 @@ body { /*Default settings for webpage*/
   width: 500px;
 }
 
-.nav-link { /*Links in header*/
-  border-bottom: 1px solid white;
-  margin: 20px;
+.tea-month { /*Tea of the month section*/
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  justify-content: space-around;
+  width: 1000px;
 }
 
 #logo { /*Logo image*/
